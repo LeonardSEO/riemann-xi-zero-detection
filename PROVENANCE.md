@@ -1,6 +1,6 @@
 # Provenance and scope
 
-Version 1.0.0 was prepared on 11 October 2026 under Leonard van Hemert's name. The manuscript is a standalone synthesis of proved zero-detection, arithmetic-realization and completion results. Its analytic arguments are contained in the paper; external results have version-specific bibliography entries and explicit application conditions.
+Version 1.0.0 was prepared and published on 11 October 2026 under Leonard van Hemert's name. The manuscript is a standalone synthesis of proved zero-detection, arithmetic-realization and completion results. Its analytic arguments are contained in the paper; external results have version-specific bibliography entries and explicit application conditions.
 
 The compiled paper and its source were frozen with these hashes:
 
@@ -26,3 +26,13 @@ The source compiled successfully. The final PDF contains 208 pages and has the s
 RH is unresolved. The remaining global signed arithmetic estimate is stated in the conclusions. Complete conditional implications have proved conclusions only under their explicitly written conditions.
 
 The paper acknowledges earlier negative-index phenomena and related operator constructions. A full result-specific originality assessment has not been completed; no priority claim or journal acceptance is asserted. The version is released as a mathematical preprint with computational support.
+
+## Published archive
+
+The public GitHub release `v1.0.0` points to commit `03e54ac535f5419a05f82f9ff0a4c04856e41f2e`. The enabled Zenodo integration received the release event and published [record 23295277](https://zenodo.org/records/23295277), classified as **Preprint**, version **1.0.0**, with author **van Hemert, Leonard**.
+
+Version DOI: https://doi.org/10.5281/zenodo.23295277. All-versions DOI: https://doi.org/10.5281/zenodo.23295276.
+
+The downloaded Zenodo ZIP is 2035605 bytes with SHA-256 `754078a9a6c58f41034c052138474f938de194e5590e7f16df8cc1e7a475c1e1`. The manuscript and PDF inside it have exactly the frozen hashes above. Public access and archival do not constitute external mathematical review.
+
+The tag and its release assets remain frozen. A subsequent documentation commit adds the minted DOI to this README, citation metadata and release notes. For exact archived-source comparisons, use the tag or Zenodo ZIP; the current branch includes this post-publication citation update.

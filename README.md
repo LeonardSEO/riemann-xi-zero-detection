@@ -2,6 +2,8 @@
 
 **Leonard van Hemert · Mathematical preprint · Version 1.0.0 · 11 October 2026**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23295277.svg)](https://doi.org/10.5281/zenodo.23295277)
+
 [Read the paper](paper/paper.pdf) · [Version 1.0.0 release](https://github.com/LeonardSEO/riemann-xi-zero-detection/releases/tag/v1.0.0) · [LaTeX source](paper/paper.tex) · [Citation metadata](CITATION.cff)
 
 This paper proves zero-detection and arithmetic-realization theorems for the Riemann xi function. It gives exact domain and multiplicity statements, quantitative costs for finite completion, and explicit lower bounds forced by an individual hypothetical off-line zero.
@@ -31,7 +33,9 @@ The [PDF](paper/paper.pdf) is a standalone 208-page manuscript. The tagged relea
 - `riemann-xi-zero-detection-v1.0.0-source.tar.gz` — complete publication source package;
 - `SHA256SUMS` — checksums of the four release assets.
 
-The GitHub release is submitted through the linked Zenodo integration for archival and a DOI. The verified DOI and its citation will be added here after archival completes.
+Version **1.0.0** is archived on Zenodo as a **Preprint**: [DOI 10.5281/zenodo.23295277](https://doi.org/10.5281/zenodo.23295277). The [published record](https://zenodo.org/records/23295277) contains the complete GitHub version archive, including the paper and computational evidence.
+
+The all-versions DOI is [10.5281/zenodo.23295276](https://doi.org/10.5281/zenodo.23295276). Use the version DOI above to cite this frozen release.
 
 ## Repository contents
 
@@ -92,6 +96,21 @@ Version-specific foundations and computational sources are cited in the manuscri
 
 ## Citation and rights
 
-Use [CITATION.cff](CITATION.cff), which selects the mathematical preprint as the preferred citation. Cite the version-specific DOI once Zenodo archival is confirmed.
+Use [CITATION.cff](CITATION.cff), which selects the mathematical preprint as the preferred citation.
+
+> van Hemert, Leonard. (2026). *Exact Zero Detection and Compact Arithmetic Realizations for the Riemann Xi Function* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23295277
+
+```bibtex
+@misc{vanHemert2026XiZeroDetection,
+  author    = {van Hemert, Leonard},
+  title     = {Exact Zero Detection and Compact Arithmetic Realizations
+               for the Riemann Xi Function},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.23295277},
+  url       = {https://doi.org/10.5281/zenodo.23295277}
+}
+```
 
 Copyright © 2026 Leonard van Hemert. Rights are described in [NOTICE](NOTICE). The upstream Xi-moment program retains its accompanying AGPL-3.0 license; public availability does not grant a new license for the manuscript.

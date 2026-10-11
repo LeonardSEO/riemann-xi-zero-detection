@@ -34,7 +34,12 @@
     "year": 2026,
     "version": "1.0.0",
     "date-published": "2026-10-11",
-    "url": "https://github.com/LeonardSEO/riemann-xi-zero-detection/releases/tag/v1.0.0",
-    "notes": "Mathematical preprint. Riemann Hypothesis unresolved."
-  }
+    "url": "https://doi.org/10.5281/zenodo.23295277",
+    "notes": "Mathematical preprint. Riemann Hypothesis unresolved.",
+    "doi": "10.5281/zenodo.23295277",
+    "publisher": {
+      "name": "Zenodo"
+    }
+  },
+  "doi": "10.5281/zenodo.23295277"
 }
