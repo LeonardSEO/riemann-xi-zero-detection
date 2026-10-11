@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "two-pole-null physical cores of support diameter at most 18/25, including the actual n=2 prime edge",
+  "arithmetic": "outward integer intervals on scale 10^30; no floating point in the proof",
+  "R": ["9", "25"],
+  "H": 14,
+  "outer_subintervals": 1024,
+  "inner_subintervals": 16,
+  "digamma_head_terms": 128,
+  "a_H_lower_checked": "> 3/4",
+  "T_upper": ["121448698941212157120305698166258693", "235619250000000000000000000000000000"],
+  "E_upper": ["88426165886112691916479579951608863", "942477000000000000000000000000000000"],
+  "outer_error": ["52521875", "247064690688"],
+  "inner_error": ["33480783", "4021235200000"],
+  "trace_upper": ["36813729307615222906343441809347361", "39269875000000000000000000000000000"],
+  "coercivity_lower": ["2456145692384777093656558190652639", "157079500000000000000000000000000000"],
+  "claimed_coercivity": ["1", "100"],
+  "source": "133_first_prime_core_check.py, actually executed; exact bounds copied from its output"
+}

@@ -1,0 +1,32 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "Exact Zero Detection and Compact Arithmetic Realizations for the Riemann Xi Function",
+  "version": "1.0.0",
+  "publication_date": "2026-10-11",
+  "creators": [
+    {
+      "name": "van Hemert, Leonard"
+    }
+  ],
+  "description": "<p>We prove exact zero-detection and arithmetic realization theorems for the Riemann xi function without assuming the Riemann Hypothesis or simplicity of its zeros. The exhausted negative index of the complete semilocal Weil form detects every distinct off-line mirror pair, including infinitely many pairs. We construct compact arithmetic realizations on their complete closed range, retain full gamma and pole terms and every prime power in the fractional family, and prove quantitative completion and individual source-growth results. For a fixed compact input, every nonempty Fourier band retains all zero poles with their original multiplicity; an off-line zero forces an explicit cumulative-energy lower bound. A joint integer gamma cap gives absolute energy transfer to the exact signed logarithmic covariance. The global bound excluding off-line zeros remains open. The Riemann Hypothesis is unresolved.</p><p>The archive contains the standalone manuscript, compiled PDF, relevant finite certificates and reproducibility materials. The mathematical proofs, internal checks and originality status are distinguished. No external endorsement or proof-assistant formalization is claimed.</p><p>Copyright &copy; 2026 Leonard van Hemert. All rights reserved except for the upstream Xi-moment program, whose accompanying AGPL-3.0 license is retained. Public access does not imply an open-content license; see NOTICE.</p>",
+  "access_right": "open",
+  "license": "other-closed",
+  "language": "eng",
+  "keywords": [
+    "Riemann xi function",
+    "Weil explicit formula",
+    "negative index",
+    "compact operators",
+    "Möbius covariance",
+    "Mellin transform",
+    "certified numerics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/LeonardSEO/riemann-xi-zero-detection/releases/tag/v1.0.0",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ]
+}

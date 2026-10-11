@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "raw full Phi, N=3 signed cross increment; no RH assertion",
+  "fourier_convention": "F_f(z)=integral f(x) exp(-izx) dx",
+  "precision_bits": 192,
+  "python_flint_version": "0.9.0",
+  "python_version": "3.14.7",
+  "quadrature_cells": 1024,
+  "quadrature_interval": "[-2,2]",
+  "gram_balls": {
+    "zero": "[0.3 +/- 0.0414]",
+    "log_3": "[0.0003 +/- 4.17e-5]",
+    "log_3_over_2": "[0.1 +/- 0.0458]"
+  },
+  "cross_ball": "[0.06 +/- 8.37e-3]",
+  "cross_strict_lower": "1/32",
+  "diagonal_ball": "[0.1 +/- 0.0138]",
+  "energy_increment_ball": "[0.2 +/- 0.0326]",
+  "increment_minus_diagonal_strict_lower": "1/16",
+  "complete_physical_tail_upper": "[4.83641910548837236221873889453903752230921881922334022798e-71 +/- 2.40e-128]",
+  "script_sha256": "5bd0af0779a20e5d08e84a57e408a7ee06d748cc137ec7b3b7a2854b4f873c15",
+  "measured_runtime_seconds": 0.03791387501405552
+}

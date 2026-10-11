@@ -1,0 +1,39 @@
+{
+  "status": "CERTIFIED_AUXILIARY_PHASE_SIGN",
+  "rh_status": "UNRESOLVED",
+  "software": {
+    "python_flint": "0.9.0",
+    "precision_bits": 192
+  },
+  "scope": "actual coherent erf partner at tau=0, kappa=1, x=3",
+  "normalization": "Xi(z)=xi(1/2+iz); E=Xi/2+iK",
+  "parameters": {
+    "x": "3",
+    "kappa": "1",
+    "physical_cut": "3",
+    "cusp_cut": "pi/4-1/256"
+  },
+  "ball_values": {
+    "Xi": "[0.40316520725707401057402238353594009206601977873873381192 +/- 1.39e-57]",
+    "Xi_prime": "[-0.05672952954947407965552660772369387052066325467276726794 +/- 3.15e-57]",
+    "K": "[-0.231872054278656583907423404057295173 +/- 6.24e-37]",
+    "K_prime": "[0.063503390205085835177734952939096378 +/- 6.30e-37]",
+    "Xi_K_prime_minus_Xi_prime_K": "[0.012448364918661968016849653261524972 +/- 4.58e-37]",
+    "Q_at_cut": "[4.9523835968948053592079595322222972908627409301772e-43 +/- 2.68e-93] + [+/- 9.70e-94]j",
+    "Q_prime_at_cut": "[-1.26820929207137165225835885626696373436747989226652e-38 +/- 7.15e-89] + [+/- 2.55e-89]j",
+    "physical_tail_K": "[1.27225777743484836466329694451988482495180135314119181e-544 +/- 4.01e-598]",
+    "physical_tail_K_prime": "[2.55640836760307299637713198375907727861697450547151924e-543 +/- 2.50e-597]",
+    "cusp_tail_K": "[1.33821504854839081679809136713979025922123592632347854223e-37 +/- 2.53e-94]",
+    "cusp_tail_K_prime": "[2.67648602224443114576525015688629169601483408915324878605e-37 +/- 6.26e-94]"
+  },
+  "proven_rational_interval": [
+    "0.0124",
+    "0.0125"
+  ],
+  "tail_dependencies": [
+    "348A/348.10 and exact two-fold integration by parts",
+    "complete original theta series, all n>=1"
+  ],
+  "not_claimed": "No off-line zeta zero, no global HB property.",
+  "script_sha256": "b0da308ec31c960ad874e5d9459f9f474287ec0ea22146d69a717bb7e5aed081"
+}

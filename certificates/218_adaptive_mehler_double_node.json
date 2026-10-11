@@ -1,0 +1,41 @@
+{
+  "status": "CERTIFIED_ACTUAL_THETA_DOUBLE_NODE_INTERNAL_DEVELOPMENT",
+  "independent_audit": "PENDING",
+  "RH_status": "UNRESOLVED",
+  "A": "7/5",
+  "kappa": "1/16",
+  "precision_bits": 8192,
+  "MP_degree": 1400,
+  "theta_terms": 50,
+  "heat_orders": "ALL_EXACT_POLYNOMIAL_HEAT",
+  "center_x": {
+    "numerator": "23279398195531947430598985091144420",
+    "denominator": "1000000000000000000000000000000000"
+  },
+  "center_t": {
+    "numerator": "64090587745914762751057333773341059",
+    "denominator": "1000000000000000000000000000000000000"
+  },
+  "real_contraction_square_radius": "1/10^18",
+  "beta_at_center": "[16.68850937923231904778321987955181742110 +/- 4.01e-39]",
+  "k_at_center": "[0.8869322475330705362195520626582944970795 +/- 3.37e-41]",
+  "theta_coefficient_error": "[1.722726034354200626895586348189944990094e-1183 +/- 4.92e-1223]",
+  "MP_tail_box": "[1.674833294568008260471959057439131722372e-21 +/- 7.66e-62]",
+  "analytic_composed_bound": "[6255769812273.236036063026394161938997936 +/- 2.91e-28]",
+  "third_jet_bound": "[300276950989115329.7310252669197730719009 +/- 1.41e-23]",
+  "inverse_jacobian_norm": "[8.119038008536644932685548378117234640580e-7 +/- 2.83e-48]",
+  "contraction_bound": "[9.751839912672490680566559253455271647676e-7 +/- 4.86e-47]",
+  "center_newton_residual": "[8.853528576747717914469027266036203571110e-27 +/- 2.43e-68]",
+  "f": "[+/- 1.68e-21]",
+  "fx": "[+/- 2.89e-20]",
+  "fxx_node": "[3.620790e+6 +/- 0.766]",
+  "partial_logA_ratio": "[-2.800848 +/- 6.46e-7]",
+  "partial_t_ratio": "[-1.188631 +/- 2.04e-7]",
+  "path_t_derivative": "-3 with respect to log A",
+  "positive_birth_ratio": "[0.765045 +/- 3.26e-7]",
+  "global_admissible_diagonal": "tstar/2*((Astar/A)^128+log(Astar)/log(A)), Astar=7/5",
+  "global_diagonal_slope_at_node": "[-4.1970366589200858 +/- 8.77e-17]",
+  "global_diagonal_birth_ratio": "[2.187880 +/- 6.88e-7]",
+  "scope": "One actual composed Mehler node at finite A; no cofinal impurity or zeta counterexample.",
+  "script_sha256": "eb5ec33901df06f48f3bd9338a5f9f10c0749e11558a08cf285a378325f554d9"
+}

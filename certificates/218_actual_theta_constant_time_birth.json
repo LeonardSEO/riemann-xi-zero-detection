@@ -1,0 +1,38 @@
+{
+  "status": "CERTIFIED_ACTUAL_THETA_DOUBLE_NODE_INTERNAL_DEVELOPMENT",
+  "independent_audit": "PENDING",
+  "RH_status": "UNRESOLVED",
+  "A": "3/500",
+  "kappa": "1/16",
+  "precision_bits": 8192,
+  "MP_degree": 1400,
+  "theta_terms": 50,
+  "heat_orders": "ALL_EXACT_POLYNOMIAL_HEAT",
+  "center_x": {
+    "numerator": "24017645919988643125392071039256224",
+    "denominator": "1000000000000000000000000000000000"
+  },
+  "center_t": {
+    "numerator": "87251674705892798030724552300184443",
+    "denominator": "100000000000000000000000000000000000"
+  },
+  "real_contraction_square_radius": "1/10^18",
+  "beta_at_center": "[0.07513681785406053316941095787722516788498 +/- 1.61e-43]",
+  "k_at_center": "[-0.8602283605094442362552307941527729976839 +/- 2.00e-41]",
+  "theta_coefficient_error": "[1.722726034354200626895586348189944990094e-1183 +/- 4.92e-1223]",
+  "MP_tail_box": "[2.868521744944165608220178131801144617033e-38 +/- 2.28e-78]",
+  "analytic_composed_bound": "[264182002571067.1018229587845419197959352 +/- 2.75e-26]",
+  "third_jet_bound": "[12680736123411220887.50202165801215020489 +/- 1.72e-21]",
+  "inverse_jacobian_norm": "[1.433592745518342774357500393503966635896e-6 +/- 3.47e-46]",
+  "contraction_bound": "[7.271604525741887543607882461341242163829e-5 +/- 1.56e-45]",
+  "center_newton_residual": "[4.950630564595981343039018095165911295761e-34 +/- 2.50e-74]",
+  "f": "[-7.5785462e-30 +/- 3.23e-38]",
+  "fx": "[1.259749802e-27 +/- 5.81e-37]",
+  "fxx_node": "[2.5861e+6 +/- 55.4]",
+  "partial_logA_ratio": "[4.1457 +/- 8.74e-5]",
+  "partial_t_ratio": "[-0.64739 +/- 7.22e-6]",
+  "path_t_derivative": "0; actual constant-time logA birth",
+  "positive_birth_ratio": "[4.1457 +/- 8.74e-5]",
+  "scope": "One actual composed Mehler node at finite A; no cofinal impurity or zeta counterexample.",
+  "script_sha256": "bb9944ec010f63f2197c3944b2e12f7fd6e385ccf5adfa4e11bdf95ff63a2f51"
+}

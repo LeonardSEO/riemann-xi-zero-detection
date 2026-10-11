@@ -1,0 +1,51 @@
+{
+  "precision_bits_or_dps": 80,
+  "n_cells": 100000,
+  "polynomial_P0_coefficients_low_to_high": [
+    "0",
+    "-6",
+    "4"
+  ],
+  "polynomial_P1_coefficients_low_to_high": [
+    "0",
+    "-15",
+    "30",
+    "-8"
+  ],
+  "polynomial_P3_coefficients_low_to_high": [
+    "0",
+    "-375/4",
+    "1635/2",
+    "-1058",
+    "360",
+    "-32"
+  ],
+  "polynomial_P4_coefficients_low_to_high": [
+    "0",
+    "-1875/8",
+    "15465/4",
+    "-8512",
+    "5176",
+    "-1056",
+    "64"
+  ],
+  "a1_ball": "[0.0394987652677499346834085138365601883858038892475799816574042641527251679459726 +/- 7.82e-80]",
+  "a1_from_P1_ball": "[0.0394987652677499346834085138365601883858038892475799816574042641527251679459726 +/- 2.03e-80]",
+  "a1_overlap_checked": true,
+  "a1_lower": "[0.039498765267749934683408513836560188385803889247579981657404264152725167945972558 +/- 2.64e-82]",
+  "abs_f3_upper": "[10.53898523442243374347578122256869949995389685102347900735145365609194484641708 +/- 6.59e-78]",
+  "integral_3_100_upper_before_factor": "[1174.3428788167798745244646792820700441292053299111310126397573896391723713959431 +/- 9.15e-78]",
+  "integral_100_inf_upper_before_factor": "[2.9493239162884826524389844524346296757437926763949129117591105121660635152127183e-31 +/- 1.82e-111]",
+  "weighted_f4_upper": "331.27601099014282226562500000000000000000000000000000000000000000000000000000000",
+  "K0_upper": "[683.62999246403167321204921869513739899990779370204695801470290731218388969283416 +/- 1.38e-78]",
+  "K0_over_2a1_upper": "8653.8147583007812500000000000000000000000000000000000000000000000000000000000000",
+  "R": 94,
+  "R_squared": 8836,
+  "claim": "Using |F1(z)+2*a1/z^2| <= K0*|z|^-4 on |Im z|<=1/2, all F1 zeros in that strip have |Re z|<R.",
+  "hypotheses": [
+    "T=pi*exp(2u), pi>3; [pi,infinity] is majorized by [3,infinity].",
+    "The [3,100] integral is bounded by interval-cell suprema.",
+    "The [100,infinity] integral uses absolute polynomial coefficients.",
+    "The asymptotic remainder bound with this K0 is the separately proved IBP bound."
+  ]
+}
