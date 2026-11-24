@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\E}{\mathcal E}
+\title{From a prime-power window bound to fixed-band M\"obius energy}
+\author{Addendum to Leonard van Hemert's \emph{Exact Zero Detection and}\\
+\emph{Compact Arithmetic Realizations for the Riemann Xi Function}}
+\date{24 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The October preprint showed that a zero of real part $1/2+\delta$, $\delta>0$, forces fixed-band energy growth with exponent at least $2\delta$. Here a one-sided bound with exponent $1/2+a$ for a smoothed prime-power sum on arbitrarily large windows gives an upper bound with exponent $2b$ for the energy at every endpoint, for each $b>a$ sufficiently close to $a$. The argument uses a zero-free half-plane at one fixed exponent and the preprint's Mellin identity. The full Riemann hypothesis (RH) is not a premise.
+\end{abstract}
+
+\paragraph{The arithmetic input.}
+Write $\Lambda$ for the von Mangoldt function and $\gamma$ for Euler's constant. In the notation of Rubinstein's exposition \cite{guide}, let
+\[
+ G(x)=\sum_{n\le x}\Lambda(n)(x/n-1)-x\log x+(1+\gamma)x.
+\]
+For $0<a<1/2$ write $P(a)$ for the assertion that there are arbitrarily large $Z$ for which $G(x)\le x^{1/2+a}$ throughout $[Z,Z^{3/2}]$.
+The Alp\"oge--Claude argument supplies this family of bounds. We import the bound for the untwisted $G$ after the arithmetic main inequality and the auxiliary character estimates have been combined (\cite{guide}, Parts I.5--I.6 and II). An implied constant or fixed multiple of the exponent loss can be absorbed by starting with a smaller positive loss. The exposition is a working draft and takes the main inequality from the formal development.
+
+\paragraph{The quantity from October.}
+Fix $q>1$, $H>0$ and $0\ne h\in C_c^\infty(\mathbb R)$. Put $Q=\log q$, $E=L^2(\mathbb R,e^{-y/2}dy)$, $J_E f(y)=e^{-y/4}f(y)$ and $T_rf(y)=f(y+r)$. Let $C_\Phi$ be the theta convolution of \cite{original}, and $\Pi_H$ the orthogonal projection onto frequencies $|u|\le H$ after applying $J_E$. The source and energy in (FB1), (FB4) are
+\[
+ U_X=\sum_{X/q<n\le X}\frac{\mu(n)\log(X/n)}{\sqrt n}
+                 T_{\log(n/X)} C_\Phi h,\qquad
+ \E_h(Y)=\int_1^Y\|\Pi_H U_X\|_E^2\,\frac{dX}{X}.
+\]
+
+\begin{theorem}
+For $0<a<b<1/2$, assumption $P(a)$ implies
+$\E_h(Y)\ll_{a,b,q,H,h}Y^{2b}$ for every $Y\ge2$.
+\end{theorem}
+
+\begin{proof}
+By the one-sided interval lemma of \cite{guide}, Part II, section 1, $P(a)$ excludes zeros of $\zeta(s)$ in $\Re s>1/2+a$. This is the only arithmetic input to the transfer below. The proof for fixed $a$ allows zeros with real part in $(1/2,1/2+a]$.
+
+We first record the vertical growth needed inside this half-plane. Uniformly for $1/2+b\le \sigma\le 3/2$ and every $\eta>0$,
+\[
+ |1/\zeta(\sigma+it)|\ll_{a,b,\eta}(1+|t|)^\eta .
+\]
+Indeed, center disks at $2+it$ for $|t|$ large and put $r=2-(1/2+b)$. Choose fixed radii $0<r_0<r<R<R'<2-(1/2+a)$ with $r_0<1$. On the largest disk choose the logarithm of $\zeta$ agreeing at the center with the Euler-product branch. Polynomial vertical growth of $\zeta$ on fixed strips gives $\Re\log\zeta=O(\log |t|)$ from above. Borel--Carath\'eodory then bounds $|\log\zeta|$ by $O(\log |t|)$ on the disk of radius $R$. The Euler product bounds it by $O(1)$ on the disk of radius $r_0$. Hadamard's three-circles theorem gives $O((\log |t|)^\lambda)$ on radius $r$, where $\lambda=\log(r/r_0)/\log(R/r_0)<1$. Exponentiation proves the estimate. On bounded heights use continuity of $1/\zeta$, with its removable value $0$ at $s=1$.
+
+By (FB2) of \cite{original}, the projected source has Mellin transform, initially for $\Re z>1/2$,
+\[
+ B(z)=\int_1^\infty X^{-z}\Pi_H U_X\,\frac{dX}{X}
+     =\frac{\Pi_H\mathcal A_q(z)h}{\zeta(1/2+z)},\qquad
+ \mathcal A_q(z)h=\int_0^Q v e^{-zv}T_{-v}C_\Phi h\,dv.
+\]
+The quotient continues holomorphically to $\Re z>a$. By (FB3), the frequency multiplier of the numerator on the band is
+$\Xi(u-i/4)K_Q(z+1/4+iu)$, where $K_Q(w)=\int_0^Q v e^{-wv}dv$.
+Integration by parts gives $K_Q(z+1/4+iu)=O_{b,q,H}((1+|\Im z|)^{-1})$ uniformly for $|u|\le H$, $b\le\Re z\le1$. The other factor is bounded on this compact band. Thus
+\[
+ \|B(\sigma+it)\|_E\ll (1+|t|)^{-1+\eta}\qquad(b\le\sigma\le1).
+\]
+Choose $0<\eta<1/2$. In particular $B(b+i\,\cdot)$ belongs to $L^2(\mathbb R;E)$.
+
+For clarity, the inverse transform on the new line represents the original source. Set $S(v)=\mathbf1_{v\ge0}\Pi_H U_{e^v}$, interpreted as zero for $v<0$. On $\Re z=1$, $B(1+it)$ is the Fourier transform of $e^{-v}S(v)$ with kernel $e^{-itv}$. For any $\varphi\in C_c^\infty(\mathbb R)$ put $L_\varphi(z)=\int_\mathbb R e^{zv}\varphi(v)\,dv$. This entire function decreases faster than any inverse power of $|\Im z|$ on the closed strip. Fourier inversion tested against $\varphi$ gives
+\[
+ \int S(v)\varphi(v)\,dv
+ =\frac1{2\pi}\int_\mathbb R B(1+it)L_\varphi(1+it)\,dt .
+\]
+Cauchy's theorem moves this last integral to $\Re z=b$, since the horizontal sides tend to zero by the strip bound. Testing against $e^{-bv}\varphi(v)$ now identifies $e^{-bv}S(v)$ with the inverse Fourier transform of $B(b+it)$ in distributions. Hilbert-space Plancherel gives
+\[
+ \int_1^\infty X^{-2b}\|\Pi_H U_X\|_E^2\,\frac{dX}{X}
+ =\frac1{2\pi}\int_\mathbb R\|B(b+it)\|_E^2\,dt<\infty .
+\]
+On $1\le X\le Y$, multiplication by $X^{2b}$ costs at most $Y^{2b}$. This proves the assertion for every endpoint.
+\end{proof}
+
+\paragraph{What this closes.}
+For any $\varepsilon>0$ choose $0<a<b<\min(1/2,\varepsilon/2)$. The external family $P(a)$ and the theorem give $\E_h(Y)\ll_\varepsilon Y^\varepsilon$ for each fixed admissible input and band. By the October paper's (FB6), a zero of order $m$ at real part $1/2+\delta$, $\delta>0$, forces a positive limsup of
+$\E_h(Y)/(Y^{2\delta}(\log Y)^{2m-2})$. Taking $\varepsilon<2\delta$ excludes that zero. The functional equation covers the other side of the critical line.
+
+\paragraph{Attribution and chronology.}
+On 11 October the preprint \cite{original} had established the detector and identified the precise energy upper bound sufficient to finish this route. Its conclusion explicitly left that estimate open. RH was solved in the proof released by Levent Alp\"oge, working with Claude, on 20 November \cite{announcement,verification}. This addendum transfers the external arithmetic estimate to the October observable. The external interval lemma already suffices to deduce RH when applied at every exponent. The additional mathematical conclusion here is the energy bound at a single fixed exponent, with control at all endpoints. The Lean verification cited below concerns Alp\"oge's proof.
+
+\begin{thebibliography}{9}
+\bibitem{original} L. van Hemert, \emph{Exact Zero Detection and Compact Arithmetic Realizations for the Riemann Xi Function}, v1.0.0, 11 October 2026. \href{https://doi.org/10.5281/zenodo.23295277}{Frozen preprint}, equations (FB1)--(FB6) and conclusions.
+\bibitem{announcement} L. Alp\"oge, \href{https://alpo.ge/remark.pdf}{author's announcement and formal proof archive references}, 20 November 2026.
+\bibitem{verification} Lean FRO and Mathlib Initiative, \href{https://leanprover-community.github.io/blog/posts/riemann-hypothesis/}{Lean verification of the Riemann Hypothesis}, 21 November 2026.
+\bibitem{guide} M. Rubinstein, \href{https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf}{The Alp\"oge--Claude proof of the Riemann hypothesis explained for the Riemann zeta function}, working draft v2, 22 November 2026.
+\end{thebibliography}
+\end{document}
