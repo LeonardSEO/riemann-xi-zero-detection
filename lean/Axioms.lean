@@ -1,0 +1,23 @@
+import MellinDilations
+import FixedBandEnergy
+import BandKernel
+import LogEnergy
+import Reciprocal
+import DiskInterpolation
+import ContourShift
+import Subpower
+
+#print axioms ExactZeroDetection.vertical_square_integrable
+#print axioms ExactZeroDetection.energy_le_of_weighted
+#print axioms ExactZeroDetection.mobiusWindow_energy_le
+#print axioms ExactZeroDetection.bandKernel_tail
+#print axioms ExactZeroDetection.weighted_of_inverseFourier
+#print axioms ExactZeroDetection.reciprocalZeta_differentiableAt
+#print axioms ExactZeroDetection.reciprocal_bound_on_disk
+#print axioms ExactZeroDetection.tested_contour_shift
+#print axioms ExactZeroDetection.bandKernel_eq_integral
+#print axioms ExactZeroDetection.log_interpolation_loss
+
+#print axioms ExactZeroDetection.mellin_mobiusDilations
+#print axioms ExactZeroDetection.mobiusDilations_windowSeed_eq
+#print axioms ExactZeroDetection.mellin_mobiusWindow

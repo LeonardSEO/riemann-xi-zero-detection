@@ -1,0 +1,39 @@
+name = "xi_zero_detection"
+version = "1.0.0"
+defaultTargets = ["FixedBandEnergy", "BandKernel", "LogEnergy", "Reciprocal", "DiskInterpolation", "ContourShift", "Subpower", "MellinDilations"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[require]]
+name = "tree"
+git = "https://github.com/CocoSgt/riemann-hypothesis-lean"
+rev = "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4"
+
+[[lean_lib]]
+name = "FixedBandEnergy"
+
+
+[[lean_lib]]
+name = "BandKernel"
+
+[[lean_lib]]
+name = "LogEnergy"
+
+[[lean_lib]]
+name = "Reciprocal"
+
+[[lean_lib]]
+name = "DiskInterpolation"
+
+[[lean_lib]]
+name = "ContourShift"
+
+
+[[lean_lib]]
+name = "Subpower"
+
+[[lean_lib]]
+name = "MellinDilations"
