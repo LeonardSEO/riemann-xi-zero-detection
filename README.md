@@ -8,7 +8,13 @@
 
 This paper proves zero-detection and arithmetic-realization theorems for the Riemann xi function. It gives exact domain and multiplicity statements, quantitative costs for finite completion, and explicit lower bounds forced by an individual hypothetical off-line zero.
 
-**RH status: unresolved.** The paper proves the stated intermediate theorems and conditional implications. The global arithmetic upper bound needed to exclude every off-line zero remains open. No simplicity of the zeta zeros is assumed.
+## November 2026 addendum and Lean verification
+
+The October preprint proved that an off-line zero forces growth of the fixed-band Möbius energy. It left the matching upper bound open. In November, Alpöge and Claude released their proof of RH. Their argument supplies the prime-power estimate used in the addendum. [Author’s announcement](https://alpo.ge/remark.pdf) · [Rubinstein’s full exposition, v2](https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf)
+
+The 24 November addendum transfers that external estimate to the October observable without assuming RH. Fix $0<a<b<1/2$. If the smoothed prime-power sum satisfies $G(x)\le x^{1/2+a}$ throughout $[Z,Z^{3/2}]$ for arbitrarily large $Z$, then the fixed-band energy satisfies $\mathcal E_h(Y)\ll_{a,b,q,H,h}Y^{2b}$ for **every** $Y\ge2$. Applying this at arbitrarily small exponents gives the subpolynomial upper bound required by the October detector. [Addendum PDF](paper/addendum.pdf) · [LaTeX source](paper/addendum.tex)
+
+Lean 4.33.1 checks the Mellin identity for the finite Möbius sum and the endpoint energy bound under weighted square integrability. The full implication from the prime-power estimate to the energy bound still awaits formal verification, including the identification of the inverse transform with the projected source on the shifted line. [Lean declarations, hypotheses and build instructions](lean/README.md)
 
 ## Principal results
 
@@ -40,7 +46,8 @@ The all-versions DOI is [10.5281/zenodo.23295276](https://doi.org/10.5281/zenodo
 ## Repository contents
 
 ```text
-paper/                   Standalone English manuscript and compiled PDF
+paper/                   October manuscript and November addendum, with sources and PDFs
+lean/                    Lean project for the fixed-band energy addendum
 certificates/            Used finite programs and frozen evidence
 scripts/                 Deterministic release packaging
 CITATION.cff             Machine-readable preferred preprint citation
@@ -55,7 +62,7 @@ The general analytic theorems require no numerical certificate. The numerical ma
 
 ## Reproduce this version
 
-Use the `v1.0.0` tag when comparing against the archived release. Verify the publication files with:
+The checksum manifest covers the October release, including its README. Run the following command in a checkout of the `v1.0.0` tag to verify those files.
 
 ```sh
 shasum -a 256 -c SHA256SUMS
@@ -80,9 +87,7 @@ Certificate replay uses Python's standard library or `python-flint==0.9.0`, as s
 
 The paper contains complete proofs with explicit hypotheses. The principal established proof ranges have internal reconstruction records. The latest fixed-band and joint gamma arguments were reconstructed for their used scope during manuscript integration; a separate independent audit of the entire new range is not claimed.
 
-Proof, originality and external review are distinct. A result-specific priority assessment has not been completed. External endorsement, journal acceptance and proof-assistant formalization are not claimed. The “Proof and reproducibility scope” paragraph in the conclusions gives the mathematical control limits in one place.
-
-The remaining arithmetic target is an eventual subpolynomial bound on the cumulative energy of the fixed visible input, retaining the signed main term and the high primitive complement. Favorable finite compressions or almost-all modulation heights do not supply that bound.
+Proof, originality and external review are distinct. A result-specific priority assessment has not been completed. The October manuscript reports neither journal acceptance nor external endorsement. The “Proof and reproducibility scope” paragraph in the conclusions gives the mathematical control limits in one place.
 
 ## Related papers
 
